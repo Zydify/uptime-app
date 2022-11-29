@@ -1,0 +1,15 @@
+[build]
+    command = "npm run build"
+    publish = "dist"
+    functions = "functions"
+
+
+[context.production.environment]
+    NODE_ENV = "production"
+
+[context.deploy-preview]
+    command = "node server/server.js"
+
+[context.branch-deploy]
+    command = "node server/server.js"
+
