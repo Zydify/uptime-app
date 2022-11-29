@@ -1,5 +1,5 @@
 [build]
-    command = "npm run build"
+    command = "npm run build && npm run export"
     publish = "dist"
     functions = "functions"
 
@@ -13,3 +13,7 @@
 [context.branch-deploy]
     command = "node server/server.js"
 
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
