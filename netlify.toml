@@ -12,7 +12,4 @@
 [context.branch-deploy]
     command = "node server/server.js"
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+
